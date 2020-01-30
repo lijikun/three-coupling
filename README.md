@@ -1,6 +1,6 @@
 Numerically calculates the transfer Hamiltonian matrix T of a particle with spin Se hopping between two identical sites with angular momentum Ss. Can be modified to calculate more general spin Hamiltonian matrices.
 
-Depends on GNU Scientific Library (GSL) and optionally OpenMP.
+Depends on GNU Scientific Library ([GSL](https://www.gnu.org/software/gsl/doc/html/)) and optionally [OpenMP](https://www.openmp.org/).
 
 To compile with g++:
 
