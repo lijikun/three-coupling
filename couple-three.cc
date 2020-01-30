@@ -49,11 +49,11 @@ int main(int argc, char* argv[]) {
         }
     }
     catch (...) {
-        printf("Erroneous parameters found. Correct usage: ./couple-three 2Ss 2Se 2S1 [2S2 2S3 ...]\n\n");
-        printf("At least 3 non-negative integer parameters needed satisfying the rules of angular momentum coupling.\n");
-        printf("Ss is the angular momentum for the two identical sites and Se is that of the hopping particle.\n");
-        printf("S1, S2, etc specify total angular momentum subspaces to be calculated.\n");
-        printf("To specify a wide range, use $(seq start step end), e.g.: ./couple-three 15 1 $seq(1 2 31)\n");
+        fprintf(stderr, "Erroneous parameters found. Correct usage: ./couple-three 2Ss 2Se 2S1 [2S2 2S3 ...]\n\n");
+        fprintf(stderr, "At least 3 non-negative integer parameters needed satisfying the rules of angular momentum coupling.\n");
+        fprintf(stderr, "Ss is the angular momentum for the two identical sites and Se is that of the hopping particle.\n");
+        fprintf(stderr, "S1, S2, etc specify total angular momentum subspaces to be calculated.\n");
+        fprintf(stderr, "To specify a wide range, use $(seq start step end), e.g.: ./couple-three 15 1 $seq(1 2 31)\n");
         return 1;
     }
     // The last element of mat_index_bases is the sum of all 2S+1, hence the dimensionality of the matrix.
