@@ -4,7 +4,7 @@ Depends on GNU Scientific Library ([GSL](https://www.gnu.org/software/gsl/doc/ht
 
 To compile with g++:
 
-    g++ --std=c++11 -O2 -fopenmp -lgsl -lgslcblas -lm couple-three.cc -o couple-three
+    g++ couple-three.cc --std=c++11 -O2 -fopenmp -lgsl -lgslcblas -lm -o couple-three
 
 Usage: 
 
